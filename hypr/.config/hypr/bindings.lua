@@ -54,3 +54,7 @@ o.bind("SUPER + ALT + F", "File manager", { omarchy = "nautilus" })
 -- Custom app bindings with no Quattro default.
 o.bind("SUPER + SHIFT + T", "Teams", { webapp = "https://teams.cloud.microsoft/" })
 o.bind("SUPER + SHIFT + ALT + D", "Discord", { webapp = "https://discord.com/channels/@me" })
+
+-- Override default agent binding to remove --auto (respects permission config)
+hl.unbind("SUPER + SHIFT + CTRL + A")
+o.bind("SUPER + SHIFT + CTRL + A", "Agent", "omarchy-launch-tui --app-id=org.omarchy.agent opencode")

@@ -21,6 +21,7 @@ source "$OMARCHY_PATH/default/bash/rc"
 #
 # Make an alias for invoking commands you use constantly
 alias py='python'
+alias c='opencode'
 
 # Function for opening markdown files in obsidian from the terminal.
 # TODO: Look into fixing these functions. Commented out for now

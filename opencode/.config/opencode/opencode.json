@@ -3,13 +3,31 @@
   "autoupdate": false,
   "instructions": ["AGENTS.md"],
   "permission": {
-    "*": "ask",
+    "bash": {
+      "*": "ask",
+      "ls *": "allow",
+      "tree *": "allow",
+      "which *": "allow",
+      "grep *": "allow",
+      "cat *": "allow",
+      "head *": "allow",
+      "tail *": "allow",
+      "wc *": "allow",
+      "diff *": "allow",
+      "file *": "allow",
+      "stat *": "allow",
+      "du *": "allow",
+      "pwd": "allow",
+      "echo *": "allow",
+      "date": "allow",
+      "find *": "allow",
+      "locate *": "allow"
+    },
     "task": "allow",
     "todowrite": "allow",
     "skill": "allow",
-    "external_directory": {
-      "~/.agents/**": "allow"
-    }
+    "websearch": "ask",
+    "external_directory": "ask"
   },
   "provider": {
     "ollama": {
