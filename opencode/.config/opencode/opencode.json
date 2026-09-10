@@ -18,16 +18,28 @@
       "stat *": "allow",
       "du *": "allow",
       "pwd": "allow",
-      "echo *": "allow",
+      "echo *": "ask",
       "date": "allow",
       "find *": "allow",
-      "locate *": "allow"
+      "locate *": "allow",
+      "id": "allow",
+      "systemctl status *": "allow",
+      "systemctl is-active *": "allow",
+      "systemctl list-units *": "allow"
     },
     "task": "allow",
     "todowrite": "allow",
     "skill": "allow",
     "websearch": "ask",
-    "external_directory": "ask"
+    "external_directory": {
+      "~/.agents/**": "allow",
+      "~/Obsidian/**": "allow",
+      "*": "ask"
+    },
+    "edit": {
+      "~/.agents/**": "allow",
+      "*": "ask"
+    }
   },
   "provider": {
     "ollama": {
