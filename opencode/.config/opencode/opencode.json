@@ -32,13 +32,15 @@
     "skill": "allow",
     "websearch": "ask",
     "external_directory": {
-      "~/.agents/**": "allow",
-      "~/Obsidian/**": "allow",
-      "*": "ask"
+      "*": "ask",
+      "/home/aidan/.agents/**": "allow",
+      "/home/aidan/Obsidian/**": "allow",
+      "/tmp/opencode/**": "allow"
     },
     "edit": {
-      "~/.agents/**": "allow",
-      "*": "ask"
+      "*": "ask",
+      "*.agents/**": "allow",
+      "*tmp/opencode/**": "allow"
     }
   },
   "provider": {
